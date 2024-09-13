@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="registration.css" class="css">
+
+    <script type="text/javascript">
+        function validation(){
+    var N,E,P,B,A,x ;
+    N=document.getElementById('Name').value;
+    E=document.getElementById('Email').value;
+    P=document.getElementById('PhoneNumber').value;
+    B=document.getElementById('BookingDate').value;
+    A=document.getElementById('Aadhar').value;
+    if (N=='' || E=='' || P=='' || B=='' || A=='' )
+        alert("please fill all the details");
+    else
+        alert("Your Registration is Successful");
+
+}
+
+
+
+    </script>
+</head>
+<body>
+    <SECTION>
+        <nav class="navbar">
+          <div class="navdiv">
+            <div class="logo"><a href="#"><img src="photos/D_LOGO.jpg" height="100px"></a></div>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">ROOMS</a></li>
+              <li><a href="#">PAGES</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <button><a href="registration.html">BOOK NOW</a></button>
+            </ul>
+          </div>
+        </nav>
+      </SECTION>
+    
+    <section class="registration-form" >
+     <div class="div1">
+        <h2>Registration</h2>
+        <form>
+            <input type="text" id="Name" placeholder="Full Name" class="user" name="" required><br>
+            <input type="email" id="Email" placeholder="Email ID" class="mail" name="" required><br>
+            <input type="Number" id="PhoneNumber" placeholder="Phone Number" class="user" min="10" name="" required><br>
+            <!-- <input type="Number" placeholder="phone number" name="country_code" title="Error Message" pattern="[1-9]{1}[0-9]{9}" required>  -->
+            <input type="Date" id="BookingDate" placeholder="Booking Date(DD/MM/YY)" class="pass" name="" required><br>
+            <input type="Number" id="Aadhar" placeholder="Aadhar Card" class="user" name="" required><br><br>
+            <input type="file"  name="" required><br><br>
+            <font color="red">*</font>Please add the aadhar
+            card in PDF format.
+            <input type="submit" value="Register"  class="button" onclick="validation()"
+             name="">
+
+        </form>
+     </div>
+    </section>
+
+    <!-- <script src="registration.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESTINY-Hotel_Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+
+</head>
+
+<body>
+  <SECTION>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="#"><img src="photos/D_LOGO.jpg" height="100px"></a></div>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">ROOMS</a></li>
+          <li><a href="#">PAGES</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <button><a href="registration.html">BOOK NOW</a></button>
+        </ul>
+      </div>
+    </nav>
+  </SECTION>
+  <SECTION>
+    <div class="S_SHOW">
+      <div class="content">
+        <div class="images">
+          <img src="photos/S_SHOW1.jpg">
+          <img src="photos/S_SHOW2.jpeg">
+          <img src="photos/S_SHOW3.jpg">
+          <img src="photos/S_SHOW4.jpg">
+          <img src="photos/S_SHOW5.jpeg">
+        </div>
+        <div class="slide left" onclick="side_slide(-1)">
+          <span class="fas fa-angle-left"></span>
+        </div>
+        <div class="slide right" onclick="side_slide(1)">
+          <span class="fas fa-angle-right"></span>
+        </div>
+        <div class="btm-sliders">
+          <span onclick="btm_slide(1)"></span>
+          <span onclick="btm_slide(2)"></span>
+          <span onclick="btm_slide(3)"></span>
+          <span onclick="btm_slide(4)"></span>
+          <span onclick="btm_slide(5)"></span>
+        </div>
+        <div class="S_Show_text">
+          <h1>Spend Your Holiday</h1>
+        </div>
+        <div class="S_Show_small_text">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <button id="S_Show_btn">READ MORE</button>
+      </div>
+    </div>
+  </SECTION>
+  <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1><span class="bookgreen">Book </span> Your Rooms</h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Arrival Date">
+          <input type="date" placeholder="Departure Date">
+          <input type="number" placeholder="Adults">
+          <input type="number" placeholder="Children">
+          <input type="submit" value="CHECK AVAILABILITY">
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="welcome">
+    <div class="welcome-flex">
+      <div class="welcome-left">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>Destiny Hotel</h2>
+        </div>
+        <p class="welcome-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam itaque tempora nihil
+          dolore possimus. Molestias vero molestiae commodi, consequatur rerum repellendus id quisquam ipsam quasi,
+          earum, aperiam nobis quidem. Modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse recusandae,
+          obcaecati non culpa reprehenderit quisquam nam, rerum beatae animi dolorem architecto, temporibus placeat quia
+          perferendis aliquam est illo qui vero?</p>
+        <button class="primary-btn">ABOUT US</button>
+      </div>
+      <div class="welcome-right">
+        <img src="photos/RECEPTION.jpeg" height="350px" width="450px" id="recep">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container">
+      <div class="box">
+        <h1>2500</h1>
+        <hr>
+        <span>Customer</span>
+      </div>
+      <div class="box">
+        <h1>2200</h1>
+        <hr>
+        <span>Happy Customer</span>
+      </div>
+      <div class="box">
+        <h1>1000</h1>
+        <hr>
+        <span>Expert Technicians</span>
+      </div>
+      <div class="box">
+        <h1>3550</h1>
+        <hr>
+        <span>Desktop Reaired</span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="rooms">
+    <div class="container-top">
+
+
+      <div class="heading">
+        <h1>EXPLORE</h1>
+        <h2>Our Rooms</h2>
+
+      </div>
+
+
+      <!-- <div class="gallery-main">
+        <h1>Selection the comforts</h1>
+        <input type="radio" id="reset" checked="checked" name="color" />
+        <label for="reset">ALL</label>
+        <input type="radio" id="delux" name="color" />
+        <label for="delux">DELLUX</label>
+        <input type="radio" id="single" name="color" />
+        <label for="single">SINGLE</label>
+        <input type="radio" id="double" name="color" />
+        <label for="double">DOUBLE</label>
+        <div class="clr"></div>
+        <div class="gallery-image luxury"><img src="photos/Room1.jpg"></div>
+        <div class="gallery-image luxury"><img src="photos/Room2.jpg"></div>
+        <div class="gallery-image luxury"><img src="photos/Room3.jpg"></div>
+        <div class="gallery-image luxury"><img src="photos/Room4.jpg"></div>
+        <div class="gallery-image singleBed"><img src="photos/single-bed-1.jpg"></div>
+        <div class="gallery-image singleBed"><img src="photos/single-bed-2.jpg"></div>
+        <div class="gallery-image singleBed"><img src="photos/single-bed-3.jpg"></div>
+        <div class="gallery-image singleBed"><img src="photos/single-bed-4.jpg"></div>
+        <div class="gallery-image doubleBed"><img src="photos/double-bed-1.jpg"></div>
+        <div class="gallery-image doubleBed"><img src="photos/double-bed-2.jpg"></div>
+        <div class="gallery-image doubleBed"><img src="photos/double-bed-3.jpg"></div>
+        <div class="gallery-image doubleBed"><img src="photos/double-bed-4.jpg"></div>
+
+
+      </div> -->
+
+      <div class="room-body">
+        <div class="gallery-main">
+          <h1>Select the comforts</h1>
+          <input type="radio" id="reset" checked="checked" name="color" />
+          <label for="reset">ALL</label>
+          <input type="radio" id="delux" name="color" />
+          <label for="delux">DELLUX</label>
+          <input type="radio" id="single" name="color" />
+          <label for="single">SINGLE</label>
+          <input type="radio" id="double" name="color" />
+          <label for="double">DOUBLE</label>
+          <div class="clr"></div>
+          <div class="gallery-image delux"><img src="photos/Room1.jpg"></div>
+          <div class="gallery-image delux"><img src="photos/Room2.jpg"></div>
+          <div class="gallery-image delux"><img src="photos/Room3.jpg"></div>
+          <div class="gallery-image delux"><img src="photos/Room4.jpg"></div>
+          <div class="gallery-image single"><img src="photos/single-bed-1.jpg"></div>
+          <div class="gallery-image single"><img src="photos/single-bed-2.jpg"></div>
+          <div class="gallery-image single"><img src="photos/single-bed-3.jpg"></div>
+          <div class="gallery-image single"><img src="photos/single-bed-4.jpg"></div>
+          <div class="gallery-image double"><img src="photos/double-bed1.jpg"></div>
+          <div class="gallery-image double"><img src="photos/double-bed2.jpg"></div>
+          <div class="gallery-image double"><img src="photos/double-bed3.jpg"></div>
+          <div class="gallery-image double"><img src="photos/double-bed4.jpg"></div>
+
+
+        </div>
+      </div>
+
+    </div>
+    
+  </section>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
